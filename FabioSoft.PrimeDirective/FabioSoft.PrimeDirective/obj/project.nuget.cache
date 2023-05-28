@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "sIDZQWfPRei67t4gUBXWiI5NJs0mM5h/UzJ4vcuRV1Sp83UpXaCszijiCl4rDQJMy5jbU9iCkeioSHfcj9Tz5Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\L2User\\Repos\\GitHub\\PrimeDirective\\FabioSoft.PrimeDirective\\FabioSoft.PrimeDirective\\FabioSoft.PrimeDirective.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\L2User\\.nuget\\packages\\fluentassertions\\6.11.0\\fluentassertions.6.11.0.nupkg.sha512",
+    "C:\\Users\\L2User\\.nuget\\packages\\system.configuration.configurationmanager\\4.4.0\\system.configuration.configurationmanager.4.4.0.nupkg.sha512",
+    "C:\\Users\\L2User\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.4.0\\system.security.cryptography.protecteddata.4.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}

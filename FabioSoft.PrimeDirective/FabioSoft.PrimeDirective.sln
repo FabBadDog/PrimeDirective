@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FabioSoft.PrimeDirective", "FabioSoft.PrimeDirective\FabioSoft.PrimeDirective.csproj", "{22C662A3-C412-40D7-9EB1-CB4D2D1A2BE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FabioSoft.PrimeDirective.Test", "FabioSoft.PrimeDirective.Test\FabioSoft.PrimeDirective.Test.csproj", "{180CACB2-E2F6-4BA0-B773-DB97A3255C0E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22C662A3-C412-40D7-9EB1-CB4D2D1A2BE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22C662A3-C412-40D7-9EB1-CB4D2D1A2BE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22C662A3-C412-40D7-9EB1-CB4D2D1A2BE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22C662A3-C412-40D7-9EB1-CB4D2D1A2BE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{180CACB2-E2F6-4BA0-B773-DB97A3255C0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{180CACB2-E2F6-4BA0-B773-DB97A3255C0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{180CACB2-E2F6-4BA0-B773-DB97A3255C0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{180CACB2-E2F6-4BA0-B773-DB97A3255C0E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
