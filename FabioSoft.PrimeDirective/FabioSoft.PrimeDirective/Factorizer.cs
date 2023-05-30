@@ -2,25 +2,31 @@ using System.Diagnostics;
 
 namespace FabioSoft.PrimeDirective;
 
-public static class Factorizer
+public class Factorizer
 {
-    public static IEnumerable<uint> Factorize(uint number)
+    private readonly IPrimeDeterminator _primeDeterminator;
+
+    public static Factorizer Default => new(new PrimeDeterminatorCollection(new DivisionRulesDeterminator(), new BruteForceDeterminator()));
+    
+    public Factorizer(params IPrimeDeterminator[] primeDeterminators) => _primeDeterminator = new PrimeDeterminatorCollection(primeDeterminators);
+
+    public ulong[] Factorize(ulong number)
     {
         if(number < 2)
         {
-            throw new Exception("Dumm? Nix da, Kollege!");
+            throw new InvalidOperationException("Input value must be at least 2!");
         }
         
         var upperLimit = Math.Sqrt(number);
 
-        if (IsPrime(number))
+        if (_primeDeterminator.IsPrime(number))
         {
             return new[] { number };
         }
 
-        for (uint i = 1; i <= upperLimit; i++)
+        for (ulong i = 1; i <= upperLimit; i++)
         {
-            if (!IsPrime(i))
+            if (!_primeDeterminator.IsPrime(i))
             {
                 continue;
             }
@@ -30,38 +36,9 @@ public static class Factorizer
                 continue;
             }
 
-            return new[] { i }.Concat(Factorize(number / i));
+            return new[] { i }.Concat(Factorize(number / i)).ToArray();
         }
 
-        throw new UnreachableException("WTF!");
-    }
-
-    private static bool IsPrime(uint number)
-    {
-        if(number == 1)
-        {
-            return false;
-        }
-        
-        if(number is 2 or 3 or 5)
-        {
-            return true;
-        }
-        
-        var lastDigit = number % 10;
-        if(lastDigit is 0 or 2 or 4 or 5 or 6 or 8)
-        {
-            return false;
-        }
-
-        for (var i = 2; i < number; i++)
-        {
-            if(number % i == 0)
-            {
-                return false;
-            }
-        }
-        
-        return true;
+        throw new UnreachableException($"The number {number} is no prime number and it could not be decomposed into prime factors. This should be impossible!");
     }
 }

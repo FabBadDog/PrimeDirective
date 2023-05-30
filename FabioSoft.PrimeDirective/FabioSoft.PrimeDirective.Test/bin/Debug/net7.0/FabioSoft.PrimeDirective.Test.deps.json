@@ -8,12 +8,12 @@
     ".NETCoreApp,Version=v7.0": {
       "FabioSoft.PrimeDirective.Test/1.0.0": {
         "dependencies": {
-          "FabioSoft.PrimeDirective": "1.0.0",
           "Microsoft.NET.Test.Sdk": "17.3.2",
           "NUnit": "3.13.3",
           "NUnit.Analyzers": "3.3.0",
           "NUnit3TestAdapter": "4.2.1",
-          "coverlet.collector": "3.1.2"
+          "coverlet.collector": "3.1.2",
+          "fact": "1.0.0"
         },
         "runtime": {
           "FabioSoft.PrimeDirective.Test.dll": {}
@@ -691,12 +691,12 @@
           "System.Xml.ReaderWriter": "4.0.11"
         }
       },
-      "FabioSoft.PrimeDirective/1.0.0": {
+      "fact/1.0.0": {
         "dependencies": {
           "FluentAssertions": "6.11.0"
         },
         "runtime": {
-          "FabioSoft.PrimeDirective.dll": {}
+          "fact.dll": {}
         }
       }
     }
@@ -1057,7 +1057,7 @@
       "path": "system.xml.xdocument/4.0.11",
       "hashPath": "system.xml.xdocument.4.0.11.nupkg.sha512"
     },
-    "FabioSoft.PrimeDirective/1.0.0": {
+    "fact/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

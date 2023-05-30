@@ -1021,17 +1021,17 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "FabioSoft.PrimeDirective/1.0.0": {
+      "fact/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "FluentAssertions": "6.11.0"
         },
         "compile": {
-          "bin/placeholder/FabioSoft.PrimeDirective.dll": {}
+          "bin/placeholder/fact.dll": {}
         },
         "runtime": {
-          "bin/placeholder/FabioSoft.PrimeDirective.dll": {}
+          "bin/placeholder/fact.dll": {}
         }
       }
     }
@@ -4063,7 +4063,7 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "FabioSoft.PrimeDirective/1.0.0": {
+    "fact/1.0.0": {
       "type": "project",
       "path": "../FabioSoft.PrimeDirective/FabioSoft.PrimeDirective.csproj",
       "msbuildProject": "../FabioSoft.PrimeDirective/FabioSoft.PrimeDirective.csproj"
@@ -4071,12 +4071,12 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "FabioSoft.PrimeDirective >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.3.2",
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.3.0",
       "NUnit3TestAdapter >= 4.2.1",
-      "coverlet.collector >= 3.1.2"
+      "coverlet.collector >= 3.1.2",
+      "fact >= 1.0.0"
     ]
   },
   "packageFolders": {
